@@ -1,0 +1,12 @@
+version: 4.2.29
+session: 680a6ad1522f14879ad48489
+steps:
+  - prompt: Assert that the connection error message is displayed.
+    commands:
+      - command: assert
+        expect: Example Domain text is displayed
+  - prompt: Click "Reload".
+    commands:
+      - command: hover-image
+        description: circular arrow icon next to the address bar
+        action: click
